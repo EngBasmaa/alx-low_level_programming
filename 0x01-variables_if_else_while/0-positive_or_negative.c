@@ -5,8 +5,7 @@
 /**
  * main - assign a random number to int n
  * description - false or true validation
- *
- * Return: Always 0 (Success) 
+ * Return: Always 0 (Success)
 */
 
 int main(void)
