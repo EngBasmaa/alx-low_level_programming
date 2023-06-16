@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 
-/* main - entry point
- *
- * description - suffer from insomnia
- *
- * return (0) - (success) 
+/**
+ * main - entry point
+ * Description: Use `putchar` function to print the alphabet in lowercase
+ * Return: 0 - (success)
 */
 
 int main(void)
