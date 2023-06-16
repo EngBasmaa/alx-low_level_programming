@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - assign a random number to int n
  * description - false or true validation
  *
- * return:Always 0 (Success) 
+ * Return: Always 0 (Success) 
 */
 
 int main(void)
