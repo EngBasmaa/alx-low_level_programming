@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-/* main - entry point
- *
- * description - alphabet soup
- *
- * return (0) - (success) 
+/**
+ * main - entry point
+ * Description:Use `putchar` to print all letters but the letter 'q' and 'e'.
+ * Return: 0 - (success)
 */
 
 int main(void)
