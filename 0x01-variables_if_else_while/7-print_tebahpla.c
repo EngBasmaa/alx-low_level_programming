@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-/* main - entry point
- *
- * description - Smile in the mirror
- *
- * return (0) - (success) 
+/**
+ * main - entry point
+ * Description: Print the alphabet in reverse order in lowercase.
+ * Return: 0 - (success)
 */
 
 int main(void)
@@ -16,7 +15,6 @@ int main(void)
 		putchar(c);
 	}
 	putchar('\n');
-
 	return (0);
 }
 

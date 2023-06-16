@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-/* main - entry point
- *
- * description -  Hexadecimal
- *
- * return (0) - (success) 
+/**
+ * main - entry point
+ * Description: Print all numbers of base64 in lowercase.
+ * Return: 0  (success)
 */
-
 int main(void)
 {
 	char c;
@@ -21,6 +19,5 @@ int main(void)
 		putchar(c);
 	}
 	putchar('\n');
-
 	return (0);
 }
