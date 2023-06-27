@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * main - update pointer
- *
+ * reset_to_98 - update value of *n as pointer
+ *@n: tne updated number
  * Return: nothing.
  */
 
