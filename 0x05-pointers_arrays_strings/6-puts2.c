@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * puts2 - print characters of a string
- * @str: string of characters
+ * puts2 - print every other characters in string
+ * @str: string array
+ * mederhoo
  * Return: Always 0.
  */
 
