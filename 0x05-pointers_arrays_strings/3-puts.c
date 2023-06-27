@@ -3,7 +3,7 @@
 /**
  * _puts - prints a string
  *@str: a string parameter to array
- * Return: Always 0.
+ * Return: length
  */
 
 void _puts(char *str)
