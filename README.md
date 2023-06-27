@@ -1,1 +1,1 @@
-read me for details
+read my details
