@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *_strncpy - commute function srtings
+ * _strncpy - commute function srtings
  * @dest: parameter pointer to a char
  * @src: parameter pointer to a char
  * @n:number of bytes to copy
@@ -24,7 +24,7 @@ char *_strncpy(char *dest, char *src, int n)
 	while (x < n)
 	{
 		dest[x] = '\0';
-		i++;
+		x++;
 	}
 
 	return (dest);
