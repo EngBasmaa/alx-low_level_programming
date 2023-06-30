@@ -5,6 +5,7 @@
  * *_strncat - concat function srtings
  * @dest: destination parameter pointer to a char
  * @src: source parameter pointer to a char
+ * @n: number of bytes of str
  * Return: return value of dest
  */
 
