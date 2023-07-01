@@ -1,14 +1,5 @@
 #include <stdio.h>
 
-/*
- * main - function for printing value updated of the pointer
- * @p: pointer
- * This is the main function of the program.
- * It performs on a,n,*p operations and returns an exit status
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * Return: always 0 (success)
-*/
 int main(void)
 {
 	int n;
