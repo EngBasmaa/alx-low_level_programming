@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - represents that the function takes NO argument
- * Description: 'the program's description'
- * Return: Always 0 (Success)
- */
-
 int main(void)
 {
 	int n;
@@ -22,7 +16,6 @@ int main(void)
  * - only one statement
  * - you are not allowed to code anything else than this line of code
 */
-
 	*(p + 5) = 98;
 
 /* to print: 98\n */
