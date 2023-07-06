@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * func_square_recursion - returns the natural square root of a number
- * @n: number
- * @i: number squared
+ * power_operation - returns the natural square root of a number.
+ * @n: input number.
+ * @c: iterator.
  * Return: -1 when n is not natural number
 */
 int power_operation(int n, int c)
