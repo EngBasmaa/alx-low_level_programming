@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * *_puts_recursion - prints a string, followed by a new line
+ * _puts_recursion - prints a string, followed by a new line
  * @s: a string will be printed
- * Return: 0 (success)
+ * Return: nothing
 */
 
 void _puts_recursion(char *s)
