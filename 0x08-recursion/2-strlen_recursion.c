@@ -3,7 +3,7 @@
 
 /**
  * _print_rev_recursion - prints length of string
- * @s: string
+ * @s: string has the length
  * Return: 0 (success)
 */
 
@@ -11,7 +11,7 @@ int _strlen_recursion(char *s)
 {
 	int length = 0;
 
-	if (*s != '0')
+	if (*s > '0')
 	{
 		length++;
 		length += _strlen_recursion(s + 1);
