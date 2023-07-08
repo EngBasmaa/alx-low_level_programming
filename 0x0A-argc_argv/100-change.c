@@ -11,32 +11,33 @@
 
 int main(int argc, char const *argv[])
 {
-	if (argc == 2)
-	{
-		int i = 0;
-		int min_cents = 0;
-		int money = atoi(argv[1]);
-		int cents[] = {25, 10, 5, 2, 1};
+	int num, i, money;
+	int coins[] = {25, 10, 5, 2, 1};
 
-		for (i = 0; i < 5; i++)
-		{
-			if (money >= cents[i])
-			{
-				min_cents++;
-				money -= cents[i];
-			}
-			if (money < 0)
-			{
-				printf("0\n");
-				return (0);
-			}
-		}
-		printf("%d\n", min_cents);
-	}else
+	if (argc != 2)
 	{
-		printf("there is an error\n");
+		printf("Error\n");
 		return (1);
 	}
+
+	num = atoi(argv[1]);
+	money = 0;
+
+	if (num < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
+	for (i = 0; i < 5 && num >= 0; i++)
+	{
+		while (num >= coins[i])
+		{
+			money++;
+			num -= coins[i];
+		}
+	}
+
+	printf("%d\n", money);
 	return (0);
 }
-
