@@ -2,15 +2,14 @@
 #include "main.h"
 
 /**
- * main -  prints all arguments it receives..
- * @argv: the list of arguments
- * @argc: integer
- * Return: 0  (success)
-*/
-
-int main(int argc, char const *argv[])
+ * main - prints all arguments it receives
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
 {
-	(void)argc;
 	int i;
 
 	for (i = 0; i < argc; i++)
