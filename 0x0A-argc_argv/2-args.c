@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include "stdio.h"
 
 /**
- * main -  prints its name, followed by a new line
+ * main -  prints all arguments it receives..
  * @argv: the list of arguments
  * @argc: integer
  * Return: 0  (success)
@@ -10,6 +10,11 @@
 int main(int argc, char const *argv[])
 {
 	(void)argc;
-	printf("%d\n", arg - 1);
+	int i = 0;
+
+	do {
+	printf("%s\n", argv[i]);
+	i++;
+	} while (argc--);
 	return (0);
 }
