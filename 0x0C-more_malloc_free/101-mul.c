@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	l1 = _strlen(s1);
 	l2 = _strlen(s2);
 	l = l1 + l2 + 1;
-	result_ptr = malloc(sizeof(int) * l);
+	result_ptr = (int *)malloc(sizeof(int) * l);
 	if (!result_ptr)
 		return (1);
 	for (i = 0; i <= l1 + l2; i++)
