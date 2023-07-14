@@ -4,7 +4,7 @@
 
 /**
  * is_digit - checks if a string of a non-digit char
- * @s: string
+ * @s: string evaluated
  * Return: (0) if a non-digit is found
  */
 int is_digit(char *s)
@@ -37,7 +37,7 @@ int _strlen(char *s)
 }
 
 /**
- * errors - handles errors for main
+ * err - handles errors for main
  */
 void err(void)
 {
