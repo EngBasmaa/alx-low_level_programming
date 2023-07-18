@@ -28,4 +28,4 @@ void free_dog(dog_t *d);
 int _strlen(char *str_);
 char _strcpy(char *s, char *s1);
 
-#endi$ vi dog.hf
+#endif
