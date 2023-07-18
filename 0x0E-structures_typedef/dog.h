@@ -2,6 +2,12 @@
 #define DOG_H
 
 /**
+ * dog_t - Typedef for struct dog
+ */
+
+typedef struct dog dog_t;
+
+/**
  * struct dog - define a dog structure
  * @name: the first member
  * @age: the second member
@@ -17,11 +23,6 @@ struct dog
 	char *owner;
 };
 
-/**
- * dog_t - typedef struct dog
-*/
-
-typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
@@ -29,4 +30,4 @@ void free_dog(dog_t *d);
 int _strlen(char *str_);
 char _strcpy(char *s, char *s1);
 
-#endif
+#endi$ vi dog.hf
