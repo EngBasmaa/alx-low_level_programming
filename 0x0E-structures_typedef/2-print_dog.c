@@ -5,10 +5,6 @@
 /**
  * print_dog - prints a struct
  * @d: pointer to struct of dog
- * @name: name of dog
- * @age: age of dog
- * @owner: name of owner of the dog
- * Return: void
 */
 
 void print_dog(struct dog *d)
@@ -28,4 +24,5 @@ void print_dog(struct dog *d)
 
 		printf("the age: %f\n", d->age);
 	}
+	return;
 }
