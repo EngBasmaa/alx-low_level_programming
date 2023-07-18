@@ -3,9 +3,9 @@
 
 /**
  * struct dog - define a dog structure
- * @name: name of dog
- * @age: age of dog
- * @owner: name of owner
+ * @name: the first member
+ * @age: the second member
+ * @owner: the third member
  * Description: Long description
  * Return: returns (0) success
 */
@@ -18,7 +18,7 @@ struct dog
 };
 
 /**
- * dog_t - it is a typedef struct dog
+ * dog_t - typedef struct dog
 */
 
 typedef struct dog dog_t;
