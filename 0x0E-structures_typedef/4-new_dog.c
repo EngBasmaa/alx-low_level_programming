@@ -3,7 +3,7 @@
 
 /**
  * _strlen - returns the length of a string
- * @s: string to be stored
+ * @str_: string to be stored
  * Return: length of string
 */
 
