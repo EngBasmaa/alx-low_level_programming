@@ -1,7 +1,7 @@
 #ifndef _variadic_functions_h
 #define _variadic_functions_h
-#include <stddef.h>
-#include <stdlib.h>
+#include <stdarg.h>
+#include <stdio.h>
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
