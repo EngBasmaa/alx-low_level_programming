@@ -32,9 +32,6 @@ int testing_prime(int n, int d)
 			return (1);
 		if (n % d == 0)
 			return (0);
-<<<<<<< HEAD
-		return (testing_prime(n, d - 1));
 	}
-=======
->>>>>>> ef870f1c87810d36ce6f92c80c23e3958ac8faad
+	return (testing_prime(n, d - 1));
 }
