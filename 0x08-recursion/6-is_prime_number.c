@@ -24,11 +24,14 @@ int is_prime_number(int n)
 
 int testing_prime(int n, int d)
 {
-		if (d == 0)
+	if (d > 0)
+	{
+		if (d == n)
 			return (1);
 		if (d == 1)
 			return (1);
 		if (n % d == 0)
-                        return (0);
+			return (0);
 		return (testing_prime(n, d - 1));
+	}
 }
