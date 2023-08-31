@@ -29,5 +29,5 @@ int testing_prime(int n, int d)
 		if (d == 1)
 			return (1);
 		if (n % d == 0)
-			return (testing_prime(n, d - 1));
+			return (0);
 }
