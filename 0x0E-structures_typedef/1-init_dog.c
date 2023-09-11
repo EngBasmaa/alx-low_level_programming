@@ -20,6 +20,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	}
 	else
 	{
-		d = malloc(sizeof(struct dog));
+		d = (struct dog *)malloc(sizeof(struct dog));
 	}
 }
