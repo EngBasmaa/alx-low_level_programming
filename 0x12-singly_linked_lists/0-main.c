@@ -11,28 +11,28 @@
 int main(void)
 {
 	list_t *head;
-	list_t *new;
+	list_t *new_node;
 	list_t hello = {"World", 5, NULL};
-	size_t n;
+	size_t num;
 
 	head = &hello;
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	new->str = strdup("Hello");
-	new->len = 5;
-	new->next = head;
-	head = new;
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
+	new_node->str = strdup("Hello");
+	new_node->len = 5;
+	new_node->next = head;
+	head = new_node;
+	num = print_list(head);
+	printf("-> %lu elements\n", num);
 	printf("\n");
-	free(new->str);
-	new->str = NULL;
-	n = print_list(head);
-	printf("-> %lu elements\n", n);
-	free(new);
+	free(new_node->str);
+	new_node->str = NULL;
+	num = print_list(head);
+	printf("-> %lu elements\n", num);
+	free(new_node);
 	return (0);
 }
