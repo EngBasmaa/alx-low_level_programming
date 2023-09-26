@@ -23,7 +23,7 @@ int main(void)
         return (1);
     }
     new->n = 9;
-    new->next = nclude <stdlib.h>head;
+    new->next = head;
     head = new;
     n = print_listint(head);
     printf("-> %lu elements\n", n);
