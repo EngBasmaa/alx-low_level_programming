@@ -2,16 +2,16 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-void print_abi(unsigned char *e_ident);
-void print_osabi(unsigned char *e_ident);
-void print_type(unsigned int e_type, unsigned char *e_ident);
-void print_entry(unsigned long int e_entry, unsigned char *e_ident);
-void close_elf(int elf);
+void printElf_abi(unsigned char *e_ident);
+void printElf_osabi(unsigned char *e_ident);
+void printElf_type(unsigned int e_type, unsigned char *e_ident);
+void printElf_entry(unsigned long int e_entry, unsigned char *e_ident);
+void closeElf(int elf);
 /**
- * print_osabi - Prints the OS/ABI of an ELF header.
+ * printElf_abi - Prints the OS/ABI of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.
  */
-void print_osabi(unsigned char *e_ident)
+void printEls_abi(unsigned char *e_ident)
 {
 	printf("  OS/ABI:     ");
 
@@ -53,21 +53,21 @@ void print_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi - Prints the ABI version of an ELF header.
+ * printElf_abi - Prints the ABI version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF ABI version.
  */
-void print_abi(unsigned char *e_ident)
+void printElf_abi(unsigned char *e_ident)
 {
 	printf("  ABI Version:                       %d\n",
 	       e_ident[EI_ABIVERSION]);
 }
 
 /**
- * print_type - Prints the type of an ELF header.
+ * printElf_type - Prints the type of an ELF header.
  * @e_type: The ELF type.
  * @e_ident: A pointer to an array containing the ELF class.
  */
-void print_type(unsigned int e_type, unsigned char *e_ident)
+void printElf_type(unsigned int e_type, unsigned char *e_ident)
 {
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
@@ -97,13 +97,13 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 /**
- * print_entry - Prints the entry point of an ELF header.
+ * printElf_entry - Prints the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
  */
-void print_entry(unsigned long int e_entry, unsigned char *e_ident)
+void printElf_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
-	printf("  Entry point address:               ");
+	printf("  Entry point address:    ");
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
@@ -120,12 +120,12 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 }
 
 /**
- * close_elf - Closes an ELF file.
+ * closeElf_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
  *
  * Description: If the file cannot be closed - exit code 98.
  */
-void close_elf(int elf)
+void closeElf_elf(int elf)
 {
 	if (close(elf) == -1)
 	{
