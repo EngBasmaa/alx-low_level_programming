@@ -27,14 +27,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	rd = read(o, buff, letters);
 	wrt = write(STDOUT_FILENO, buff, rd);
 
-	if (o == -1 || r == -1 || w == -1 || w != r)
+	if (o == -1 || rd == -1 || wrt == -1 || wrt != rd)
 	{
 		free(buff);
 		return (0);
 	}
-	else
-		break;
-
 	free(buff);
 	close(o);
 
