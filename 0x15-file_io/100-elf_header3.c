@@ -5,11 +5,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-void checkElf(unsigned char *e_ident);
-void printElf_magic(unsigned char *e_ident);
-void printElf_class(unsigned char *e_ident);
-void printElf_data(unsigned char *e_ident);
-void printElf_version(unsigned char *e_ident);
+#include "main.h"
 /**
  * checkElf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
