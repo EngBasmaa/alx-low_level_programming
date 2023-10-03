@@ -5,8 +5,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "100-elf_header2.h"
-#include "100-elf_header3.h"
+
 void printElf_abi(unsigned char *e_ident);
 void printElf_osabi(unsigned char *e_ident);
 void printElf_type(unsigned int e_type, unsigned char *e_ident);
