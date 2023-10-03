@@ -8,10 +8,10 @@ void printElf_type(unsigned int e_type, unsigned char *e_ident);
 void printElf_entry(unsigned long int e_entry, unsigned char *e_ident);
 void closeElf(int elf);
 /**
- * printElf_abi - Prints the OS/ABI of an ELF header.
+ * printElf_osabi - Prints the OS/ABI of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.
  */
-void printEls_abi(unsigned char *e_ident)
+void printEls_osabi(unsigned char *e_ident)
 {
 	printf("  OS/ABI:     ");
 
