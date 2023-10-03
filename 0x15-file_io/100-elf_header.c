@@ -15,6 +15,15 @@ void printElf_magic(unsigned char *e_ident);
 void printElf_class(unsigned char *e_ident);
 void printElf_data(unsigned char *e_ident);
 void printElf_version(unsigned char *e_ident);
+void display_error(const char* message);
+/**
+ * display_error - Prints the error of execution
+ * @e_ident: A pointer to an array containing the ELF ABI version.
+ */
+void display_error(const char* message) {
+    fprintf(stderr, "Error: %s\n", message);
+    exit(98);
+}
 /**
  * printElf_abi - Prints the ABI version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF ABI version.
